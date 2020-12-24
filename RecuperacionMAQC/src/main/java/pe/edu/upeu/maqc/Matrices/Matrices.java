@@ -58,44 +58,4 @@ public class Matrices {
         return matrizResultado;
     }
 
-
-
-    public static int[][] matrizCaracol() {
-        int dimen = 5;
-        int[][] matriz = new int[dimen][dimen];
-        int numero = 0;
-        int a = 0;
-        int b = dimen - 1;
-
-        for (int j = 0; j < matriz.length; j++) {
-
-            for (int i = b - 1; i >= a; i--) {
-                matriz[b][i] = numero++;
-            }
-            for (int i = b - 1; i >= a + 1; i--) {
-                matriz[i][a] = numero++;
-            }
-            for (int i = a; i <= b; i++) {
-                matriz[a][i] = numero++;
-            }
-
-            for (int i = a + 1; i <= b; i++) {
-                matriz[i][b] = numero++;
-            }
-
-
-
-
-
-            a++;
-            b--;
-
-
-        }
-
-        
-        return matriz;
-    }
-  
-
 }
